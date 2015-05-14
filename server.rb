@@ -8,7 +8,7 @@ server = WEBrick::HTTPServer.new(:Port => 8000, :DocumentRoot => "#{ROOT}/public
 
 server.mount_proc '/content' do |req, res|
   @page_title = "Hack News Mock"
-  @hack = YAML.load_file("#{ROOT}/post.yml")
+  @hack = YAML.load_file("#{ROOT}/content.yml")
   template = ERB.new(File.read("#{ROOT}/index.html.erb"))
   res.body = template.result
 end
