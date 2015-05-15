@@ -1,6 +1,9 @@
+/********** GLOBALS ***************/
+
 body {
   font-family: Verdana, sans-serif;
   color: #828282;
+  box-sizing: border-box;
 }
 
 .main-wrapper {
@@ -8,6 +11,12 @@ body {
   max-width: 960px;
   margin: 0 auto;
 }
+
+a {
+  text-decoration: none;
+}
+
+/************* HEADER **************/
 
 header {
   display: table;
@@ -23,30 +32,53 @@ header {
   display: table-cell;
 }
 
-.logo {
-  color: #fff;
-  text-transform: uppercase;
-  padding: 0 5px;
-  border: 1px solid #fff;
-  font-weight: 600;
+.logo-header-wrapper {
+  width: 130px;
 }
 
-h1 {
-  display: inline-block;
-  font-weight: 600;
-}
+    .logo-wrapper {
+      text-align: right
+    }
+
+        .logo {
+          color: #fff;
+          text-transform: uppercase;
+          padding: 0 5px;
+          border: 1px solid #fff;
+          font-weight: 600;
+        }
+
+    h1 {
+      display: inline-block;
+      font-weight: 600;
+    }
 
 .main-nav-list {
   list-style: none;
 }
 
-.main-nav-list li {
-  display: inline-block;
+    .main-nav-list li {
+      display: inline-block;
+      text-align: center;
+    }
+
+        .main-nav-link {
+          color: #000;
+        }
+
+.login-wrapper {
+  text-align: right;
 }
+
+    .login-link {
+      color: #000;
+    }
+
+/************* MAIN SECTION **************/
 
 .main {
   border-bottom: 2px solid #8d90a1;
-  padding: 20px 0;
+  padding-bottom: 20px;
 }
 
 .headline {
@@ -55,7 +87,6 @@ h1 {
 }
 
 .source-link {
-  text-decoration: none;
   color: #828282;
 }
 
@@ -70,7 +101,31 @@ h1 {
 }
 
 .more-link {
-  text-decoration: none;
   color: #000;
   margin-left: 40px;
+}
+
+/************* FOOTER **************/
+
+.footer-nav {
+  margin-top: 20px;
+}
+
+.footer-nav-list {
+  list-style: none;
+  text-align: center;
+}
+
+    .footer-nav-list li {
+      display: inline-block;
+      font-size: 14px;
+     }
+
+    .footer-nav-link {
+      color: #000;
+    }
+
+.search-wrapper {
+  text-align: center;
+  padding: 20px 0;
 }
