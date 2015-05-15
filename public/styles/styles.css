@@ -11,4 +11,14 @@ body {
 
 .headline {
   display: inline-block;
+  color: #000000;
+}
+
+.source,
+.supporting_text {
+  font-size: 12px;
+}
+
+.list li {
+  margin: 10px 0;
 }
