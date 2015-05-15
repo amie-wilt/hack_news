@@ -33,6 +33,7 @@
         <ol class="list">
             <% @hack["listings"].each do |listing| %>
             <li>
+                <div class="arrow"></div>
                 <h2 class="headline"><%= listing['headline'] %></h2>
                 <span class="source">(<a href="#" title="" class="source-link"><%= listing['source'] %></a>)</span>
                 <p class="supporting_text"><%= listing['supporting_text'] %></p>
