@@ -35,7 +35,7 @@ listings:
   - headline: "Show HN: I made a site that lets you trade Bitcoin for bulletproof coffee"
     source: bitterproof.orf
     supporting_text: 46 points by philipn 2 hours ago | 13 comments
-  - headline: Chemists find a way to unboil eggs this one is actually a real headline
+  - headline: Chemists find a way to unboil eggs (this one is actually a real headline)
     source: phys.org
     supporting_text: 121 points by lelf 5 hours ago | 36 comments
   - headline: "Beautiful law: how design can make law simpler, useful and fascinating"
@@ -65,7 +65,7 @@ listings:
   - headline: I really hope someone reads all these sight gags
     source: okaymaybeiwasbored.com
     supporting_text: 12 points by diafygi 5 hours ago | 3 comments
-  - headline: The Earth is Round p < 0.05   1994
+  - headline: The Earth is Round (p < 0.05) (1994)
     source: berkeley.edu
     supporting_text: 28 points by nathell 6 hours ago | 7 comments
   - headline: Medieval Speech Bubbles
@@ -92,10 +92,11 @@ listings:
   - headline: Selections in Three.js
     source: delimited.io
     supporting_text: 14 points by deliminated 6 hours ago | discuss
-  - headline: "I'll bundle your gems. That doesn't even make sense?"
+  - headline: |
+      "I'll bundle your gems." "That doesn't even make sense?"
     source: lowqualityinnuendo.com
     supporting_text: 11 points by conatus 5 hours ago | 1 comment
-  - headline: ZeroCater YC W11   is looking for a full-stack engineer to help feed the world
+  - headline: ZeroCater (YC W11)   is looking for a full-stack engineer to help feed the world
     source:
     supporting_text: 3 hours ago
 
