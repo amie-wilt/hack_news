@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" type="text/css" href="styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
   <title><%= @page_title %></title>
 </head>
 <body>
 
 <% @hack.each do |listing| %>
-  <p class="headline"><%= listing['headline'] %></p>
-}
+  <h2 class="headline"><%= listing['headline'] %></h2>
+  <span class="source"><%= listing['source'] %></span>
+  <p class="supporting_text"><%= listing['supporting_text'] %></p>
 <% end %>
 </body>
 </html>
