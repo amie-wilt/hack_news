@@ -1,5 +1,12 @@
+body {
+  font-family: Verdana, sans-serif;
+  color: #828282;
+}
+
 .main {
   background-color: #eef0f3;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .headline {
