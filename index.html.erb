@@ -1,24 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="styles/reset.css">
-  <link rel="stylesheet" type="text/css" href="styles/styles.css">
-  <title><%= @page_title %></title>
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <title><%= @page_title %></title>
 </head>
 
 <body>
 <div class="main-wrapper">
-  <section class="main">
-    <ol class="list">
-      <% @hack.each do |listing| %>
-        <li>
-          <h2 class="headline"><%= listing['headline'] %></h2>
-          <span class="source"><%= listing['source'] %></span>
-          <p class="supporting_text"><%= listing['supporting_text'] %></p>
-        </li>
-      <% end %>
-    </ol>
-  </section>
+    <header>
+        <div class="logo-header-wrapper">
+            <span class="logo">i</span>
+            <h1>Iron News</h1>
+        </div>
+
+        <nav class="main-nav">
+            <ul class="main-nav-list">
+                <% @hack["main_nav_elements"].each do |item| %>
+                <li>
+                  <%= item %>
+                </li>
+                <% end %>
+            </ul>
+        </nav>
+
+        <div class="login-wrapper">
+            <a class="login-link" href="#" title="">login</a>
+        </div>
+    </header>
+
+    <section class="main">
+        <ol class="list">
+            <% @hack["listings"].each do |listing| %>
+            <li>
+                <h2 class="headline"><%= listing['headline'] %></h2>
+                <span class="source">(<a href="#" title="" class="source-link"><%= listing['source'] %></a>)</span>
+                <p class="supporting_text"><%= listing['supporting_text'] %></p>
+            </li>
+            <% end %>
+        </ol>
+
+        <a href="#" title="" class="more-link">More</a>
+    </section>
+
+    <footer>
+        <nav class="footer-nav">
+            <ul class="footer-nav-list">
+                <li>
+
+                </li>
+            </ul>
+        </nav>
+    </footer>
 </div>
 </body>
 </html>
