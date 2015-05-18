@@ -4,7 +4,8 @@ require 'yaml'
 
 ROOT = File.dirname(__FILE__)
 
-server = WEBrick::HTTPServer.new(:Port => 8000, :DocumentRoot => "#{ROOT}/public")
+server = WEBrick::HTTPServer.new(:Port => ENV['PORT'], :DocumentRoot => "#{ROOT}/public")
+# server = WEBrick::HTTPServer.new(:Port => 8000, :DocumentRoot => "#{ROOT}/public")
 
 server.mount_proc '/content' do |req, res|
   @page_title = "Hack News Mock"
