@@ -1,17 +1,24 @@
+require 'rubygems'
+require 'bundler/setup'
+require 'tilt'
 require 'erb'
 require 'webrick'
 require 'yaml'
+require 'slim'
 
 ROOT = File.dirname(__FILE__)
 
-server = WEBrick::HTTPServer.new(:Port => ENV['PORT'], :DocumentRoot => "#{ROOT}/public")
-# server = WEBrick::HTTPServer.new(:Port => 8000, :DocumentRoot => "#{ROOT}/public")
+PORT = ENV["PORT"] || 8000
 
-server.mount_proc '/content' do |req, res|
-  @page_title = "Hack News Mock"
-  @hack = YAML.load_file("#{ROOT}/content.yml")
-  template = ERB.new(File.read("#{ROOT}/index.html.erb"))
-  res.body = template.result
+server = WEBrick::HTTPServer.new(:Port => PORT)
+
+server.mount '/assets', WEBrick::HTTPServlet::FileHandler, "#{ROOT}/public"
+
+server.mount_proc '/' do |req, res|
+  page_title = "Hack News Mock"
+  hack = YAML.load_file("#{ROOT}/content.yml")
+  template = Tilt.new("#{ROOT}/index.slim")
+  res.body = template.render(self, {:hack => hack, :page_title => page_title}, )
 end
 
 trap 'INT' do
