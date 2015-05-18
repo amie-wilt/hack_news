@@ -1,0 +1,161 @@
+/********** GLOBALS ***************/
+
+body {
+  font-family: Verdana, sans-serif;
+  color: #828282;
+}
+
+.main-wrapper {
+  background-color: #eef0f3;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/************* HEADER **************/
+
+header {
+  display: table;
+  width: 100%;
+  background-color: #8d90a1;
+  padding: 10px;
+  color: #000;
+  box-sizing: border-box;
+}
+
+.logo-header-wrapper,
+.main-nav,
+.login-wrapper {
+  display: table-cell;
+}
+
+.logo-header-wrapper {
+  width: 130px;
+}
+
+.logo-wrapper {
+  text-align: right;
+}
+.logo {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0 5px;
+  border: 1px solid #fff;
+  font-weight: 600;
+}
+
+h1 {
+  display: inline-block;
+  font-weight: 600;
+}
+
+.main-nav-list {
+  list-style: none;
+
+    li {
+      display: inline-block;
+      text-align: center;
+      border-right: 2px solid #fff;
+      padding-right: 10px;
+      padding-left: 5px;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+}
+
+.main-nav-link {
+  color: #000;
+}
+
+.login-wrapper {
+  text-align: right;
+
+  .login-link {
+    color: #000;
+  }
+}
+
+/************* MAIN SECTION **************/
+
+.main {
+  border-bottom: 3px solid #8d90a1;
+  padding-bottom: 20px;
+}
+
+.arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 9px solid #828282;
+}
+
+.headline {
+  display: inline-block;
+  color: #000;
+}
+
+.source-link {
+  color: #828282;
+}
+
+.source,
+.supporting_text {
+  font-size: 12px;
+}
+
+.supporting_text {
+  margin-left: 15px;
+}
+
+.list li {
+  margin: 10px 0;
+  line-height: 1.25;
+}
+
+.more-link {
+  color: #000;
+  margin-left: 55px;
+}
+
+/************* FOOTER **************/
+
+.footer-nav {
+  margin-top: 20px;
+
+  .footer-nav-list {
+    list-style: none;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      font-size: 14px;
+      border-right: 2px solid #828282;
+      padding-right: 10px;
+      padding-left: 5px;
+
+      &:last-child {
+        border-right: none;
+      }
+
+      .footer-nav-link {
+        color: #000;
+      }
+    }
+  }
+}
+
+.search-wrapper {
+  text-align: center;
+  padding: 20px 0;
+
+  input {
+    width: 175px;
+  }
+}
