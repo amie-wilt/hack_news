@@ -1,13 +1,19 @@
 /********** VARIABLES *************/
 
+/*** colors ***/
+
 $lightest-grey: #eef0f3;
 $light-grey: #828282;
 $dark-grey: #8d90a1;
 
+/*** fonts ***/
+
+$font-stack: Verdana, sans-serif;
+
 /********** GLOBALS ***************/
 
 body {
-  font-family: Verdana, sans-serif;
+  font-family: $font-stack;
   color: $light-grey;
 }
 

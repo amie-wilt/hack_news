@@ -3,7 +3,7 @@ html
   head
     title = page_title
     link rel="stylesheet" type="text/css" href="/assets/styles/reset.css"
-    link rel="stylesheet" type="text/css" href="/assets/styles/style.css"
+    link rel="stylesheet" type="text/css" href="/assets/styles/styles.css"
 
   body
     .main-wrapper
@@ -20,28 +20,28 @@ html
         .login-wrapper
           a.login-link login
 
-    section.main
-      ol.list
-        - hack["listings"].each do |listing|
-          li
-            .arrow
-            h2.headline = listing["headline"]
-            span.source
-              a.source-link = listing["source"]
-            p.supporting_text = listing["supporting_text"]
-
-      a.more-link More
-
-    footer
-      nav.footer-nav
-        ul.footer-nav-list
-          - hack["footer_nav_elements"].each do |item|
+      section.main
+        ol.list
+          - hack["listings"].each do |listing|
             li
-              a.footer-nav-link = item
+              .arrow
+              h2.headline = listing["headline"]
+              span.source
+                a.source-link = listing["source"]
+              p.supporting_text = listing["supporting_text"]
 
-      .search-wrapper
-        label Search:
-          input type="search" name="search"
+        a.more-link More
+
+      footer
+        nav.footer-nav
+          ul.footer-nav-list
+            - hack["footer_nav_elements"].each do |item|
+              li
+                a.footer-nav-link = item
+
+        .search-wrapper
+          label Search:
+            input type="search" name="search"
 
 
 
