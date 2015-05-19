@@ -1,12 +1,18 @@
+/********** VARIABLES *************/
+
+$lightest-grey: #eef0f3;
+$light-grey: #828282;
+$dark-grey: #8d90a1;
+
 /********** GLOBALS ***************/
 
 body {
   font-family: Verdana, sans-serif;
-  color: #828282;
+  color: $light-grey;
 }
 
 .main-wrapper {
-  background-color: #eef0f3;
+  background-color: $lightest-grey;
   max-width: 960px;
   margin: 0 auto;
 }
@@ -20,7 +26,7 @@ a {
 header {
   display: table;
   width: 100%;
-  background-color: #8d90a1;
+  background-color: $dark-grey;
   padding: 10px;
   color: #000;
   box-sizing: border-box;
@@ -39,6 +45,7 @@ header {
 .logo-wrapper {
   text-align: right;
 }
+
 .logo {
   color: #fff;
   text-transform: uppercase;
@@ -55,21 +62,21 @@ h1 {
 .main-nav-list {
   list-style: none;
 
-    li {
-      display: inline-block;
-      text-align: center;
-      border-right: 2px solid #fff;
-      padding-right: 10px;
-      padding-left: 5px;
+  li {
+    display: inline-block;
+    text-align: center;
+    border-right: 2px solid #fff;
+    padding-right: 10px;
+    padding-left: 5px;
 
-      &:last-child {
-        border-right: none;
-      }
+    &:last-child {
+      border-right: none;
     }
-}
 
-.main-nav-link {
-  color: #000;
+    .main-nav-link {
+      color: #000;
+    }
+  }
 }
 
 .login-wrapper {
@@ -83,7 +90,7 @@ h1 {
 /************* MAIN SECTION **************/
 
 .main {
-  border-bottom: 3px solid #8d90a1;
+  border-bottom: 3px solid $dark-grey;
   padding-bottom: 20px;
 }
 
@@ -93,7 +100,7 @@ h1 {
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-bottom: 9px solid #828282;
+  border-bottom: 9px solid $light-grey;
 }
 
 .headline {
@@ -102,7 +109,7 @@ h1 {
 }
 
 .source-link {
-  color: #828282;
+  color: $light-grey;
 }
 
 .source,
@@ -136,7 +143,7 @@ h1 {
     li {
       display: inline-block;
       font-size: 14px;
-      border-right: 2px solid #828282;
+      border-right: 2px solid $light-grey;
       padding-right: 10px;
       padding-left: 5px;
 
