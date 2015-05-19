@@ -21,6 +21,10 @@ server.mount_proc '/' do |req, res|
   res.body = template.render(self, {:hack => hack, :page_title => page_title}, )
 end
 
+server.mount_proc '/stylesheet.css' do |req, res|
+  res.body = Tilt.new("#{ROOT}/stylesheet.scss").render
+end
+
 trap 'INT' do
   server.shutdown
 end
