@@ -46,23 +46,23 @@ header {
 
 .logo-header-wrapper {
   width: 130px;
-}
 
-.logo-wrapper {
-  text-align: right;
-}
+  .logo-wrapper {
+    text-align: right;
 
-.logo {
-  color: #fff;
-  text-transform: uppercase;
-  padding: 0 5px;
-  border: 1px solid #fff;
-  font-weight: 600;
-}
+    .logo {
+      color: #fff;
+      text-transform: uppercase;
+      padding: 0 5px;
+      border: 1px solid #fff;
+      font-weight: 600;
+    }
+  }
 
-h1 {
-  display: inline-block;
-  font-weight: 600;
+  h1 {
+    display: inline-block;
+    font-weight: 600;
+  }
 }
 
 .main-nav-list {
